@@ -19,8 +19,8 @@ public class MedicineDayFormatter implements DayFormatter {
         if (medicineTakenDates.contains(day)) {
             return day.getDay() + "\n服用済";  // 日付と「服用済」を表示
         } else {
-            // 通常の日付はそのまま表示
-            return String.valueOf(day.getDay());
+            // 服用済がない日付も高さをそろえるために空の改行を追加
+            return day.getDay() + "\n";  // 空行を追加して高さを合わせる
         }
     }
 }

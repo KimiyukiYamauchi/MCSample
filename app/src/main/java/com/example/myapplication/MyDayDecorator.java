@@ -24,6 +24,6 @@ public class MyDayDecorator implements DayViewDecorator {
     @Override
     public void decorate(DayViewFacade view) {
         // 背景にドットを表示する
-        view.addSpan(new DotSpan(10, Color.RED));
+        view.addSpan(new DotSpan(5, Color.BLUE));
     }
 }
